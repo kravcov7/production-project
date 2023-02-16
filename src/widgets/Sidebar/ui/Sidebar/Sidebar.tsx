@@ -4,6 +4,7 @@ import { LangSwitcher } from "shared/ui/LangSwitcher/LangSwitcher";
 import { ThemeSwitcher } from "shared/ui/ThemeSwitcher";
 import cls from "./Sidebar.module.scss";
 import { Button } from "shared/ui/Button/Button";
+import React from "react";
 
 interface SidebarProps {
   className?: string;
