@@ -13,6 +13,7 @@ export default {
 } as ComponentMeta<typeof Sidebar>;
 
 const Template: ComponentStory<typeof Sidebar> = (args) => (
+  // eslint-disable-next-line react/jsx-props-no-spreading
   <Sidebar {...args} />
 );
 

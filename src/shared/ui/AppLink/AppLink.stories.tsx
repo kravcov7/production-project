@@ -16,6 +16,7 @@ export default {
 } as ComponentMeta<typeof AppLink>;
 
 const Template: ComponentStory<typeof AppLink> = (args) => (
+  // eslint-disable-next-line react/jsx-props-no-spreading
   <AppLink {...args} />
 );
 
