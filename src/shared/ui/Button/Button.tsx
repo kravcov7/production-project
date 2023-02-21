@@ -43,6 +43,7 @@ export const Button: FC<ButtonProps> = (props) => {
     // eslint-disable-next-line react/button-has-type
     <button
       className={classNames(cls.button, mods, [className, cls[theme]])}
+      // eslint-disable-next-line react/jsx-props-no-spreading
       {...otherProps}
     >
       {children}

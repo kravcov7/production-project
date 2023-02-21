@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { FC } from "react";
 import { Link } from "react-router-dom";
 import { classNames } from "shared/lib/classNames/classNames";
@@ -27,6 +28,7 @@ export const AppLink: FC<AppLinkProps> = (props) => {
     <Link
       to={to}
       className={classNames(cls.appLink, {}, [className, cls[theme]])}
+      // eslint-disable-next-line react/jsx-props-no-spreading
       {...otherProps}
     >
       {children}
