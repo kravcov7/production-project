@@ -1,19 +1,22 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import React from "react";
+import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
-import { Theme } from 'app/providers/ThemeProvider';
-import { PageError } from './PageError';
+import { ThemeDecorator } from "shared/config/storybook/ThemeDecorator/ThemeDecorator";
+import { Theme } from "app/providers/ThemeProvider";
+import { PageError } from "./PageError";
 
 export default {
-    title: 'widget/PageError',
-    component: PageError,
-    argTypes: {
-        backgroundColor: { control: 'color' },
-    },
+  title: "widget/PageError",
+  component: PageError,
+  argTypes: {
+    backgroundColor: { control: "color" },
+  },
 } as ComponentMeta<typeof PageError>;
 
-const Template: ComponentStory<typeof PageError> = (args) => <PageError {...args} />;
+const Template: ComponentStory<typeof PageError> = (args) => (
+  // eslint-disable-next-line react/jsx-props-no-spreading
+  <PageError {...args} />
+);
 
 export const Light = Template.bind({});
 Light.args = {};

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { ButtonHTMLAttributes, FC } from "react";
 import { classNames } from "shared/lib/classNames/classNames";
 import cls from "./Button.module.scss";
@@ -39,6 +40,7 @@ export const Button: FC<ButtonProps> = (props) => {
   };
 
   return (
+    // eslint-disable-next-line react/button-has-type
     <button
       className={classNames(cls.button, mods, [className, cls[theme]])}
       {...otherProps}
